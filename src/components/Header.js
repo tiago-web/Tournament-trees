@@ -1,7 +1,7 @@
 import React from "react";
 
-const Header = () => {
-	return <h1>Select the amount of teams</h1>;
+const Header = props => {
+	return <h1>{props.title}</h1>;
 };
 
 export default Header;
