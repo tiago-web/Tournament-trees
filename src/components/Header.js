@@ -1,11 +1,24 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const Header = props => {
-	return <h1>{props.title}</h1>;
+// Header Page
+export default () => {
+	return (
+		<header>
+			<h1>Tournament Trees App</h1>
+			<nav>
+				<ul>
+					<li>
+						<NavLink to="/">Home</NavLink>
+					</li>
+					<li>
+						<NavLink to="/create-tournament">New Tournament</NavLink>
+					</li>
+					<li>
+						<NavLink to="/display-tournaments">Check Tournaments</NavLink>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	);
 };
-
-Header.defaultProps = {
-	title: "Select the number of teams",
-};
-
-export default Header;
