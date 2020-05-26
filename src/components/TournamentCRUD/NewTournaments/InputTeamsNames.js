@@ -31,11 +31,13 @@ export default props => {
 	const handleSubmit = e => {
 		// ADD a way to prevent invalid inputs
 
-		props.submitTeamsNames(e, names);
+		props.handleTeamsNames(e, names);
 	};
 
 	return (
 		<div>
+			<h2>Provide a Name for Each Team</h2>
+
 			<form onSubmit={handleSubmit}>
 				{generateInputBoxes()}
 				<input type="submit" value="Confirm" />

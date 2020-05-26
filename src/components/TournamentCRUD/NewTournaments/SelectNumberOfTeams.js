@@ -6,7 +6,7 @@ export default props => {
 
 	return (
 		<div>
-			<form onSubmit={e => props.submitTeamsNumber(e, numOfTeams)}>
+			<form onSubmit={e => props.handleTeamsNumber(e, numOfTeams)}>
 				<select onChange={e => setNumOfTeams(parseInt(e.target.value))}>
 					<option value={2}>2</option>
 					<option value={4}>4</option>

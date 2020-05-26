@@ -9,12 +9,3 @@ export const getRandomWinner = (teamId_1, teamId_2) => {
 		return teamId_2;
 	}
 };
-
-export const getRowsAndColumns = numOfTeams => {
-	const rowsAndColumns = {
-		rows: numOfTeams * 2 - 1,
-		cols: (Math.log(numOfTeams) / Math.log(2)) * 2 + 1,
-	};
-
-	return rowsAndColumns;
-};
