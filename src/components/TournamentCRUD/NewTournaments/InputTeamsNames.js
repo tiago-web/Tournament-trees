@@ -29,7 +29,7 @@ export default props => {
 	};
 
 	const handleSubmit = e => {
-		// Prevent invalid inputs
+		// ADD a way to prevent invalid inputs
 
 		props.submitTeamsNames(e, names);
 	};
