@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 // CREATE_TOURNAMENT
 export const createTournament = ({
 	isRandomTournament,
-	name = "",
+	title = "",
 	numOfTeams,
 	teamNames = [],
 } = {}) => ({
@@ -13,7 +13,7 @@ export const createTournament = ({
 	tournament: {
 		id: uuidv4(),
 		isRandomTournament,
-		name,
+		title,
 		numOfTeams,
 		teamNames,
 	},

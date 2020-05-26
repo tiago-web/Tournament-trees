@@ -1,15 +1,23 @@
 import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+
+import { createTournament } from "../../actions/tournaments";
+
 import SelectNumberOfTeams from "./NewTournaments/SelectNumberOfTeams";
-import InputTeamsNames from "./NewTournaments/InputTeamsNames";
+import InputTeamNames from "./NewTournaments/InputTeamNames";
 import SetRandomWinner from "./NewTournaments/SetRandomWinner";
 import CofirmTournamentCreation from "./NewTournaments/CofirmTournamentCreation";
+import { useHistory } from "react-router-dom";
 
 // Create Tournament Dashboard
 export default () => {
+	const history = useHistory();
+	const dispatch = useDispatch();
 	const [state, setState] = useState({
+		title: "Tournament Title Here",
 		numOfTeams: 0,
 		teamNames: [],
-		generateRandomWinner: false,
+		isRandomTournament: false,
 		renderConfirmationPage: false,
 	});
 
@@ -28,9 +36,9 @@ export default () => {
 
 	const handleRandomWinner = value => {
 		if (value === "yes") {
-			setState(prevState => ({ ...prevState, generateRandomWinner: true }));
+			setState(prevState => ({ ...prevState, isRandomTournament: true }));
 		} else {
-			setState(prevState => ({ ...prevState, generateRandomWinner: false }));
+			setState(prevState => ({ ...prevState, isRandomTournament: false }));
 		}
 
 		// Set renderConfirmationPage to true
@@ -38,7 +46,19 @@ export default () => {
 	};
 
 	const handleCreateTournament = value => {
-		console.log(value);
+		if (value === "confirm") {
+			dispatch(
+				createTournament({
+					isRandomTournament: state.isRandomTournament,
+					title: state.title,
+					numOfTeams: state.numOfTeams,
+					teamNames: state.teamNames,
+				})
+			);
+			history.push("/");
+		} else {
+			history.push("/");
+		}
 	};
 
 	const displayComponents = () => {
@@ -46,7 +66,7 @@ export default () => {
 			return <SelectNumberOfTeams handleTeamsNumber={handleTeamsNumber} />;
 		} else if (state.numOfTeams !== 0 && state.teamNames.length === 0) {
 			return (
-				<InputTeamsNames
+				<InputTeamNames
 					numOfTeams={state.numOfTeams}
 					handleTeamsNames={handleTeamsNames}
 				/>
@@ -69,6 +89,17 @@ export default () => {
 	return (
 		<div>
 			<h1>Create Tournament Dashboard</h1>
+			<input
+				className="tournament-title"
+				autoFocus={true}
+				type="text"
+				value={state.title}
+				onChange={e => {
+					const { value } = e.target;
+
+					setState(prevState => ({ ...prevState, title: value }));
+				}}
+			/>
 			{displayComponents()}
 		</div>
 	);

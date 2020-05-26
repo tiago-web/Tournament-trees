@@ -8,7 +8,3 @@ export const getRowsAndColumns = numOfTeams => {
 
 	return rowsAndColumns;
 };
-
-export const createTournament = (isRandom, teamNames) => {
-	console.log(isRandom, teamNames);
-};

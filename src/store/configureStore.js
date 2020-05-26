@@ -1,12 +1,14 @@
 import { createStore, combineReducers } from "redux";
 import teamsReducer from "../reducers/teams";
-import matchesReduces from "../reducers/matches";
+import matchesReducer from "../reducers/matches";
+import tournamentsReducer from "../reducers/tournaments";
 
 export default () => {
 	const store = createStore(
 		combineReducers({
 			teams: teamsReducer,
-			matches: matchesReduces,
+			matches: matchesReducer,
+			tournaments: tournamentsReducer,
 		})
 	);
 
