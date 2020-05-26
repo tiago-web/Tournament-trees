@@ -4,7 +4,7 @@ const TEAMS_INITIAL_STATE = [];
 
 export default (state = TEAMS_INITIAL_STATE, action) => {
 	switch (action.type) {
-		case "ADD_TEAM":
+		case "CREATE_TEAM":
 			return [...state, action.team];
 		case "REMOVE_TEAM":
 			return state.filter(({ id }) => id !== action.id);

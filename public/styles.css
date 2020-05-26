@@ -40,7 +40,8 @@ form input {
 	font-size: 18px;
 	font-weight: 300;
 }
-form input[type="submit"] {
+form input[type="submit"],
+.btn {
 	appearance: none;
 	outline: 0;
 	background-color: white;
@@ -50,7 +51,8 @@ form input[type="submit"] {
 	width: 250px;
 	font-size: 18px;
 }
-form input[type="submit"]:hover {
+form input[type="submit"]:hover,
+.btn:hover {
 	border: 1px solid rgba(252, 252, 252, 0.4);
 	background-color: rgba(252, 252, 252, 0.2);
 	appearance: none;
@@ -75,4 +77,14 @@ form select {
 	font-size: 18px;
 	font-weight: 300;
 	cursor: pointer;
+}
+
+.tournament-title {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	color: #414141;
+}
+.tournament-title:focus {
+	outline: none;
 }

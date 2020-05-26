@@ -1,9 +1,10 @@
 import { v4 as uuidv4 } from "uuid";
+
 // Teams actions
 
-// ADD_TEAM
-export const addTeam = ({ teamName = "", matchsId = [] } = {}) => ({
-	type: "ADD_TEAM",
+// CREATE_TEAM
+export const createTeam = ({ teamName = "", matchsId = [] } = {}) => ({
+	type: "CREATE_TEAM",
 	team: {
 		id: uuidv4(), // uuid
 		teamName,

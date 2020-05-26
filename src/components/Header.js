@@ -15,7 +15,7 @@ export default () => {
 						<NavLink to="/create-tournament">New Tournament</NavLink>
 					</li>
 					<li>
-						<NavLink to="/display-tournaments">Check Tournaments</NavLink>
+						<NavLink to="/display-tournaments">See Tournaments</NavLink>
 					</li>
 				</ul>
 			</nav>
