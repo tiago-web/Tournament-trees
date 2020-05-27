@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
    <img src=".github/logo.jpg" width="200"/>
 </p>
 
@@ -59,7 +59,7 @@ Run the following command in order to start the application in a development env
 
 # :hammer: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Tournament-trees](https://github.com/tiago-web/tournament-tree/issues) repository. If you already found a solution to your problem, **i would appreciate to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the [Tournament-tree](https://github.com/tiago-web/tournament-tree/issues) repository. If you already found a solution to your problem, **i would appreciate to review your pull request**!
 
 # :book: License
 
