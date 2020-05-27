@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
    <img src=".github/logo.jpg" width="200"/>
 </p>
 
@@ -17,7 +17,7 @@
 * [Found an error? Missing some features?](#hammer-issues)
 * [License](#book-license)
 
-# :link:Features
+# :link: Features
 
 * Tournaments CRUD
 * Filter Tournaments
