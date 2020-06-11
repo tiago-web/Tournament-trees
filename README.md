@@ -1,3 +1,4 @@
+<h1 align="center">:warning:This project is under development.:construction:</h1>
 <p align="center">
    <img src=".github/logo.jpg" width="200"/>
 </p>
@@ -64,6 +65,6 @@ Feel free to **file a new issue** with a respective title and description on the
 # :book: License
 
 Released in 2020.
-This project is under the [MIT license](https://github.com/tiago-web/tournament-tree/master/LICENSE).
+This project is under the [MIT license](https://github.com/tiago-web/tournament-tree/blob/master/LICENSE).
 
 Made with ❤️ by [Tiago Soriano](https://github.com/tiago-web) 🚀
