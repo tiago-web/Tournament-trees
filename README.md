@@ -8,6 +8,24 @@
 
 > Manage your championships
 
+<p align="center">
+   <a href="https://github.com/tiago-web" style="text-decoration: none">
+    <img alt="Author" src="https://img.shields.io/badge/Author-tiago--web-008f00" />
+   </a>
+   
+   <a href="#" style="text-decoration: none">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tiago-web/Tournament-trees?color=008f00" />
+   </a>
+   
+   <a href="https://github.com/tiago-web/Tournament-trees/stargazers" style="text-decoration: none">
+    <img alt="Stars" src="https://img.shields.io/github/stars/tiago-web/Tournament-trees?color=008f00&style=flat" />
+   </a>
+   
+   <a href="https://github.com/tiago-web/Tournament-trees/issues" style="text-decoration: none">
+    <img alt="Issues" src="https://img.shields.io/github/issues/tiago-web/Tournament-trees?color=008f00&style=flat" />
+   </a>
+</p>
+
 # :pushpin: Table of Contents
 
 * [Features](#link-features)
@@ -20,20 +38,20 @@
 
 # :link: Features
 
-* Tournaments CRUD
-* Filter Tournaments
-* Set the number of teams participating in the tournament
-* Decide whether you want to get a random winner or define it as the matches go.
+* 🛠 Tournaments CRUD
+* 🔍 Filter existing Tournaments
+* 📋 Set the number of teams participating in the tournament
+* 🎰 Decide whether you want to get a random winner or if you prefer to define after each match
 
 # :construction_worker: Installation
 
 **You need to install [Node.js](https://nodejs.org/en/download/). In order to clone the project via HTTPS, run this command:**
 
-```git clone https://github.com/tiago-web/tournament-tree.git```
+```git clone https://github.com/tiago-web/Tournament-trees.git```
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-```git clone git@github.com:tiago-web/tournament-tree.git```
+```git clone git@github.com:tiago-web/Tournament-trees.git```
 
 **Install dependencies**
 
@@ -60,11 +78,11 @@ Run the following command in order to start the application in a development env
 
 # :hammer: Issues
 
-Feel free to **file a new issue** with a respective title and description on the [Tournament-tree](https://github.com/tiago-web/tournament-tree/issues) repository. If you already found a solution to your problem, **i would appreciate to review your pull request**!
+Feel free to **file a new issue** with a respective title and description on the [Tournament-trees](https://github.com/tiago-web/Tournament-trees/issues) repository. If you already found a solution to your problem, **i would appreciate to review your pull request**!
 
 # :book: License
 
 Released in 2020.
-This project is under the [MIT license](https://github.com/tiago-web/tournament-tree/blob/master/LICENSE).
+This project is under the [MIT license](https://github.com/tiago-web/Tournament-trees/blob/master/LICENSE).
 
 Made with ❤️ by [Tiago Soriano](https://github.com/tiago-web) 🚀
